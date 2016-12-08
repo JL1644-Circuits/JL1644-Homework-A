@@ -1,0 +1,40 @@
+.large-banner {
+	left: 0;
+	min-height: 476px;
+	@extend %group;
+	position: relative;
+	top:0;
+
+	.wrapper {
+		max-width: 100%;
+		min-width: 100%;
+	}
+	.bg-image {
+		display: block;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		
+		img {
+			bottom: 0;
+			display: block;
+			left: 0;
+			min-height: 100%;
+			min-width: 100%;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+	}
+	
+	@include breakpoint(tablet) {
+		min-height: 100%;
+		min-width: 100%;
+	}
+	
+	@include breakpoint(desktop) {
+		min-height: 100%;
+		min-width: 100%;
+	}
+}
